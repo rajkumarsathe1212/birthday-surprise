@@ -74,7 +74,7 @@ export const quizQuestions = [
   {
     id: 11,
     question: "Who is my favorite person?",
-    options: ["You", "or only You"],
-    answer: "Me",
+    options: ["You", "Only You ❤️"],
+    answer: "Only You ❤️",
   },
 ];

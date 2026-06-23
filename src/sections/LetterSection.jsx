@@ -18,8 +18,7 @@ Happy Birthday ❤️
 It's funny how two people can meet online
 and become such an important part of each other's lives.
 
-We haven't met in person yet,
-but you've already given me countless smiles,
+You've already given me countless smiles,
 memories, and moments that I genuinely treasure.
 
 Thank you for being someone I can talk to,
