@@ -1,0 +1,140 @@
+/* src/styles/animations.css */
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes pulseGlow {
+  0% {
+    opacity: 0.7;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.7;
+  }
+}
+
+.float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.glow {
+  animation: pulseGlow 3s infinite;
+}
+
+
+/* ===============================
+   🌟 FINAL CINEMATIC UPGRADE LAYER
+   =============================== */
+
+/* 💖 Soft floating variation (more natural than single float) */
+@keyframes floatSoft {
+  0% {
+    transform: translateY(0px) translateX(0px);
+  }
+  25% {
+    transform: translateY(-8px) translateX(3px);
+  }
+  50% {
+    transform: translateY(-15px) translateX(-3px);
+  }
+  75% {
+    transform: translateY(-8px) translateX(2px);
+  }
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
+}
+
+.float-soft {
+  animation: floatSoft 5s ease-in-out infinite;
+}
+
+/* 💓 Heartbeat effect (for emotional moments) */
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.heartbeat {
+  animation: heartbeat 1.6s ease-in-out infinite;
+}
+
+/* ✨ Soft sparkle shimmer */
+@keyframes shimmer {
+  0% {
+    opacity: 0.4;
+    filter: blur(0px);
+  }
+  50% {
+    opacity: 1;
+    filter: blur(0.5px);
+  }
+  100% {
+    opacity: 0.4;
+    filter: blur(0px);
+  }
+}
+
+.shimmer {
+  animation: shimmer 2.5s ease-in-out infinite;
+}
+
+/* 🌙 Gentle hover lift (premium feel) */
+.hover-lift {
+  transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(255, 182, 193, 0.25);
+}
+
+/* 💫 Soft glow pulse upgrade */
+@keyframes glowPulseSoft {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 182, 193, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 182, 193, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(255, 182, 193, 0.2);
+  }
+}
+
+.glow-soft {
+  animation: glowPulseSoft 3s ease-in-out infinite;
+}
+
+/* 🌸 Floating + glow combo (best for cards) */
+.float-glow {
+  animation: floatSoft 5s ease-in-out infinite, glowPulseSoft 3s ease-in-out infinite;
+}

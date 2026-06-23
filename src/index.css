@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import "./styles/globals.css";
+@import "./styles/animations.css";
+@import "./styles/glass.css";
+@import "./styles/hearts.css";
+@import "./styles/stars.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  background: linear-gradient(
+    135deg,
+    #ffb6c1,
+    #f8c8dc,
+    #e6e6fa,
+    #d8bfd8
+  );
+  overflow-x: hidden;
+}
+
+/* 🌌 Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 🎬 Scroll snapping system */
+html, body {
+  height: 100%;
+  scroll-snap-type: y mandatory;
+  overflow-x: hidden;
+}
+
+/* 📜 Every section becomes a snap point */
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
